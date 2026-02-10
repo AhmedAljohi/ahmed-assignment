@@ -40,6 +40,7 @@ export default function Button({
         font-medium
         rounded-md
         transition
+        cursor-pointer
         ${variantClasses[variant]}
         ${sizeClasses[size]}
         ${disabled ? "opacity-50 cursor-not-allowed" : ""}

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useProductDetailsDataLoad } from '@/hooks/useProduct';
 import StarRating from '@/components/StarRating';
 import Typography from '@/components/Typography';
+import Button from '@/components/Button';
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -49,18 +50,17 @@ export default function ProductDetailPage() {
   return (
     <div className="w-full max-w-4xl mx-auto px-6 py-10 font-abel">
       <div className="mb-6">
-        <button
-          type="button"
+        <Button
           onClick={() => router.back()}
-          className="text-nav-inactive hover:text-nav-active text-sm transition-colors"
+          variant="success"
+          size="md"
+          disabled={false}
         >
-          ← Back
-        </button>
+          ← Back to products
+        </Button>
       </div>
 
-      <h1 className="text-3xl md:text-4xl font-normal text-nav-active text-center mb-8">
-        {product.title}
-      </h1>
+      <Typography font='inter' size={30} color='black' weight={500}>{product.title}</Typography>
 
       {mainImage && (
         <div className="relative w-full aspect-video max-h-[400px] rounded-lg overflow-hidden bg-[#1f2937] mb-8">
