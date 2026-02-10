@@ -16,7 +16,6 @@ export interface CardProps {
 
 export default function Card(props: CardProps) {
   const { title, description, price, thumbnail, onClick } = props;
-  console.log('pro :>> ', props);
   return (
     <article className="w-[301px] h-[312px] p-2 flex flex-col bg-white rounded-lg border border-[#e5e7eb] shadow-[0px_4px_13px_0px_#00000040]">
       {thumbnail && (
