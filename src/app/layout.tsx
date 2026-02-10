@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter, Abel } from 'next/font/google'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/organisms/Header'
+import Footer from '@/components/organisms/Footer'
 import { ReactQueryProvider } from '@/providers/react-query'
 
 const inter = Inter({

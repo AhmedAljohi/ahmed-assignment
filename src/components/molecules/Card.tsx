@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import Button from "./Button";
-import Typography from "./Typography";
+import Button from "@/components/atoms/Button";
+import Typography from "@/components/atoms/Typography";
 
 export interface CardProps {
   title: string;
@@ -28,7 +28,6 @@ export default function Card(props: CardProps) {
           />
         </div>)}
 
-      {/* Product details */}
       <div className="flex flex-col flex-1">
         <Typography font='inter' size={20} color='green' weight={500}>
           {title ?? ''}

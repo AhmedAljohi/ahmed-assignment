@@ -1,10 +1,8 @@
-import ProductsGrid from "@/components/ProductsGrid";
+import ProductsGrid from "@/components/organisms/ProductsGrid";
 
 export default function Home() {
 
   return (
-    <>
-      <ProductsGrid />
-    </>
+    <ProductsGrid />
   );
 }

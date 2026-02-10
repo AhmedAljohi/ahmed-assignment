@@ -1,4 +1,4 @@
-import Typography from '@/components/Typography'
+import Typography from '@/components/atoms/Typography'
 import Image from 'next/image'
 
 const ABOUT_HEADING = 'About NHC National Housing Company'

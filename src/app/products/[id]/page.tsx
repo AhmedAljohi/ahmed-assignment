@@ -4,9 +4,9 @@ import { useParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useProductDetailsDataLoad } from '@/hooks/useProduct';
-import StarRating from '@/components/StarRating';
-import Typography from '@/components/Typography';
-import Button from '@/components/Button';
+import StarRating from '@/components/atoms/StarRating';
+import Typography from '@/components/atoms/Typography';
+import Button from '@/components/atoms/Button';
 
 export default function ProductDetailPage() {
   const params = useParams();

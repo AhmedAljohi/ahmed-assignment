@@ -1,11 +1,11 @@
 'use client'
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import Card from './Card';
+import Card from '@/components/molecules/Card';
 import { useProductDataLoad } from '@/hooks/useProduct';
-import Searchbar from './Searchbar';
+import Searchbar from '@/components/molecules/Searchbar';
 import { useState } from 'react';
-import Typography from './Typography';
+import Typography from '@/components/atoms/Typography';
 
 const ProductsGrid = () => {
   const router = useRouter();

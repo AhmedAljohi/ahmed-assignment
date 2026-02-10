@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Typography from "./Typography";
+import Typography from "@/components/atoms/Typography";
 
 type SearchbarProps = {
   value?: string;

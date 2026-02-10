@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import Typography from './Typography'
+import Typography from '@/components/atoms/Typography'
 
 const navItems = [
   { href: '/', label: 'Products' },
